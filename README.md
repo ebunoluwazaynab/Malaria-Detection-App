@@ -149,7 +149,8 @@ To containerize the application using Docker, follow these steps:
 
 ## Example Input and Output
 ### Example Input
-- An image of a blood smear.
+![C66P27N_ThinF_IMG_20150818_164008_cell_155_png rf a4921f45ed8c5abea3843db1d087de41](https://github.com/ebunoluwazaynab/Malaria-Detector-App/assets/64692340/4ec8452e-bc4e-41c9-8cca-a47fd13628a3)
+
 
 ### Example Output
 ![image](https://github.com/ebunoluwazaynab/Malaria-Detector-App/assets/64692340/ea49404e-5a8c-4646-b20a-27205993b727)
