@@ -152,7 +152,8 @@ To containerize the application using Docker, follow these steps:
 - An image of a blood smear.
 
 ### Example Output
-- A prediction message indicating whether the sample is "Parasitized" or "Uninfected".
+![image](https://github.com/ebunoluwazaynab/Malaria-Detector-App/assets/64692340/ea49404e-5a8c-4646-b20a-27205993b727)
+
 
 ## Contributing
 1. Fork the repository.
