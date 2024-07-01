@@ -95,40 +95,6 @@ cd <repository-name>
 3. **Open your browser and navigate to the frontend server (usually `http://localhost:5173`).**
 
 4. **Upload an image and click "Predict" to get the prediction.**
-   
-## File Structure
-
-```
-.
-├── backend
-│   ├── app.py
-│   ├── mobilenetv2_malaria_model.h5
-│   ├── requirements.txt
-│   ├── malaria_dataset.zip
-│   ├── results
-│   │   ├── plots
-│   │   │   ├── ...
-│   └── venv
-│       ├── ...
-├── frontend
-│   ├── node_modules
-│   ├── public
-│   │   └── vite.svg
-│   ├── src
-│   │   ├── assets
-│   │   ├── App.css
-│   │   ├── App.jsx
-│   │   ├── FileUpload.jsx
-│   │   ├── index.css
-│   │   ├── main.jsx
-│   ├── .gitignore
-│   ├── .eslintrc.cjs
-│   ├── index.html
-│   ├── package.json
-│   ├── package-lock.json
-│   ├── README.md
-│   ├── vite.config.js
-```
 
 ## Model Training
 The model used in this project is a fine-tuned MobileNetV2, trained on the Malaria Cell Images Dataset. The training was performed using TensorFlow and Keras.
