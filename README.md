@@ -102,12 +102,10 @@ cd <repository-name>
 .
 ├── backend
 │   ├── app.py
-│   ├── requirements.txt
 │   ├── mobilenetv2_malaria_model.h5
+│   ├── requirements.txt
 │   ├── malaria_dataset.zip
 │   ├── results
-│   │   ├── images
-│   │   │   ├── ...
 │   │   ├── plots
 │   │   │   ├── ...
 │   └── venv
