@@ -14,7 +14,6 @@ Malaria is a life-threatening disease caused by parasites that are transmitted t
 ## Technologies Used
 - **Backend**: Flask, TensorFlow, Keras
 - **Frontend**: React, Vite
-- **Deployment**: Docker (optional)
 
 ## Prerequisites
 - Python 3.8+
@@ -22,7 +21,7 @@ Malaria is a life-threatening disease caused by parasites that are transmitted t
 - Git
 
 ## Data Description
-The dataset used for training the model is the [Malaria Cell Images Dataset](https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria) from Kaggle. It contains labeled images of infected and uninfected blood smears.
+The dataset used for training the model is a [Malaria Cell Images Dataset](https://www.kaggle.com/datasets/sayeemmohammed/malaria-detection) from Kaggle. It contains labeled microscopic images of parasitized and uninfected blood smears.
 
 ## Installation
 
@@ -96,7 +95,7 @@ cd <repository-name>
 3. **Open your browser and navigate to the frontend server (usually `http://localhost:5173`).**
 
 4. **Upload an image and click "Predict" to get the prediction.**
-
+   
 ## File Structure
 
 ```
@@ -105,47 +104,46 @@ cd <repository-name>
 │   ├── app.py
 │   ├── requirements.txt
 │   ├── mobilenetv2_malaria_model.h5
+│   ├── malaria_dataset.zip
+│   ├── results
+│   │   ├── images
+│   │   │   ├── ...
+│   │   ├── plots
+│   │   │   ├── ...
 │   └── venv
 │       ├── ...
 ├── frontend
+│   ├── node_modules
 │   ├── public
-│   │   └── index.html
+│   │   └── vite.svg
 │   ├── src
 │   │   ├── assets
 │   │   ├── App.css
 │   │   ├── App.jsx
 │   │   ├── FileUpload.jsx
 │   │   ├── index.css
-│   │   └── main.jsx
+│   │   ├── main.jsx
 │   ├── .gitignore
+│   ├── .eslintrc.cjs
+│   ├── index.html
 │   ├── package.json
 │   ├── package-lock.json
-│   └── README.md
+│   ├── README.md
+│   ├── vite.config.js
 ```
 
 ## Model Training
 The model used in this project is a fine-tuned MobileNetV2, trained on the Malaria Cell Images Dataset. The training was performed using TensorFlow and Keras.
 
 ### Steps to Train the Model
-1. **Load the dataset**: The dataset is loaded and split into training, validation, and test sets.
+1. **Load the dataset**: The dataset is split into training, validation, and test sets.
 2. **Preprocess the data**: Images are resized to 224x224 pixels and normalized.
 3. **Build the model**: MobileNetV2 is used as the base model, with additional layers added for classification.
 4. **Train the model**: The model is trained on the training set and validated on the validation set.
 5. **Save the model**: The trained model is saved for later use in the Flask app.
 
-## Deployment
-### Docker (Optional)
-To containerize the application using Docker, follow these steps:
-
-1. **Build the Docker image:**
-   ```bash
-   docker build -t malaria-detector .
-   ```
-
-2. **Run the Docker container:**
-   ```bash
-   docker run -p 5000:5000 malaria-detector
-   ```
+## Results
+Model performance metrics, images, and plots generated during the training and evaluation phases are saved in the backend/results directory.
 
 ## Example Input and Output
 ### Example Input
@@ -167,7 +165,7 @@ To containerize the application using Docker, follow these steps:
 This project is licensed under the MIT License.
 
 ## Acknowledgements
-- This project uses the [Malaria Cell Images Dataset](https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria) from Kaggle.
+- This project uses the [Malaria Cell Images Dataset](https://www.kaggle.com/datasets/sayeemmohammed/malaria-detection) from Kaggle.
 - The model is built using the MobileNetV2 architecture and TensorFlow framework.
 
 ## Contact
